@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Coffe blog</h2>
+            <table>
+                <tr>
+                    <td><label for="name">Название напитка</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Американо"></td>
+                </tr>
+                <tr>
+                   
+                    <tr>
+                        <td>
+                            <label for="type">сорт кофе</label>
+                        </td>
+                        <td>
+                            <select id="type" name="type">
+                                <option>Арабика</option>
+                                <option>Робуста</option>
+                                <option>Либерика</option>
+                                <option>Эксцельса</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <td>
+                        <h3>Тип крепкости:</h3> 
+                        <label for="first">Легкий</label><input type="radio" id="first" name="strong" value="Легкий"> <br> 
+                        <label for="second">Средний</label><input type="radio" id="second" name="strong" value="Средний"> <br> 
+                        <label for="third">Крепкий</label><input type="radio" id="third" name="strong" value="Крепкий"> <br> 
+                     <br> 
+                     <div>Изображение напитка  <input type="text" name="image" placeholder="ссылка на картинку"></div> 
+                     <div>Цена напитка  <input name="cost" type="number" required></div> 
+                     <div >Описание напитка  <br><textarea id="descr" name="description" cols="40" rows="10" placeholder="Описание"></textarea></div> 
+                     <button id="btn">Добавить напиток</button>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Сколько чашек кофе вы выпиваете в неделю?</label></td>
+                    <td><input type="number" id="quantity" name="quantity" placeholder="5"></td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <label for="message">Напишите свой вопрос</label>
+                    </td>
+                    <td>
+                        <textarea id="message" name="message"></textarea>
+                    </td>
+                </tr>               
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="Очистить">
+                        <input type="submit" value="Задать вопрос">
+                    </td>
+                </tr>
+            </table>
+</body>
+</html>
